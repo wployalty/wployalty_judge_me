@@ -7,6 +7,7 @@ defined('ABSPATH') or die;
         <div><b><?php echo "v" . WLJM_PLUGIN_VERSION; ?></b></div>
     </div>
     <div class="wljm-parent">
+        <div class="wlr-toast-notification"></div>
         <div class="wljm-body-content">
             <div id="wljm-settings" class="wljm-body-active-content active-content">
                 <div class="wljm-heading-data">

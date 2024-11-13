@@ -1,137 +1,288 @@
-# Copyright (C) 2022 Wployalty
-# This file is distributed under the GNU General Public License v3.0.
-#, fuzzy
+# Copyright (C) 2024 WPLoyalty
+# This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPLoyalty - Judge.me Compatibility\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 12:21+0530\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Project-Id-Version: WPLoyalty - Judge.Me 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-loyalty-judge-me\n"
 "Last-Translator: WPLoyalty\n"
 "Language-Team: WPLoyalty\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.3.2\n"
+"POT-Creation-Date: 2024-11-04T06:39:28+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: wp-loyalty-judge-me\n"
-"X-Poedit-KeywordsList: __;_e;_n;_x;esc_attr__;esc_attr_e;esc_attr_x;"
-"esc_html__;esc_html_e;esc_html_x\n"
-"X-Poedit-Basepath: ../..\n"
-"X-Poedit-SearchPath-0: App\n"
-"X-Poedit-SearchPath-1: wp-loyalty-judge-me.php\n"
-"X-Poedit-SearchPathExcluded-0: vendor\n"
-"X-Poedit-SearchPathExcluded-1: Assets\n"
-"X-Poedit-SearchPathExcluded-2: composer.lock\n"
-"X-Poedit-SearchPathExcluded-3: composer.json\n"
+
+#. Plugin Name of the plugin
+#: wp-loyalty-judge-me.php
+#: wp-loyalty-judge-me.php:63
+msgid "WPLoyalty - Judge.Me"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wp-loyalty-judge-me.php
+msgid "https://www.wployalty.net"
+msgstr ""
+
+#. Description of the plugin
+#: wp-loyalty-judge-me.php
+msgid "The add-on integrates WPLoyalty with the Judge.me and allows you to reward customers with points for writing reviews in Judge.me"
+msgstr ""
+
+#. Author of the plugin
+#: wp-loyalty-judge-me.php
+msgid "WPLoyalty"
+msgstr ""
+
+#. Author URI of the plugin
+#: wp-loyalty-judge-me.php
+msgid "https://wployalty.net/"
+msgstr ""
+
+#: App/Conditions/CartLineItemsCount.php:15
+msgid "Line Item Count"
+msgstr ""
+
+#: App/Conditions/CartLineItemsCount.php:16
+#: App/Conditions/CartSubTotal.php:16
+msgid "Cart"
+msgstr ""
+
+#: App/Conditions/CartSubTotal.php:15
+msgid "Subtotal"
+msgstr ""
+
+#: App/Conditions/UserRole.php:15
+msgid "User role"
+msgstr ""
+
+#: App/Conditions/UserRole.php:16
+msgid "Customer"
+msgstr ""
 
 #: App/Controllers/Controller.php:21
+#: App/Controllers/Controller.php:22
 msgid "WPLoyalty: Judge.me"
 msgstr ""
 
-#: App/Controllers/Controller.php:48
+#: App/Controllers/Controller.php:43
 msgid "Don't have access permission"
 msgstr ""
 
-#: App/Controllers/Controller.php:90
+#: App/Controllers/Controller.php:83
 msgid "Page query params missing..."
 msgstr ""
 
-#: App/Controllers/Controller.php:103
-#: App/Controllers/Controller.php:207
-#: App/Controllers/Controller.php:235
-msgid "Basic validation failed"
-msgstr ""
-
 #: App/Controllers/Controller.php:115
-msgid "Settings saved successfully!"
-msgstr ""
-
-#: App/Controllers/Controller.php:145
 msgid "Deleting..."
 msgstr ""
 
-#: App/Controllers/Controller.php:146 App/Views/Admin/main.php:81
+#: App/Controllers/Controller.php:116
+#: App/Views/Admin/main.php:64
 msgid "Delete"
 msgstr ""
 
-#: App/Controllers/Controller.php:147
+#: App/Controllers/Controller.php:117
 msgid "Creating..."
 msgstr ""
 
-#: App/Controllers/Controller.php:148 App/Views/Admin/main.php:85
+#: App/Controllers/Controller.php:118
+#: App/Views/Admin/main.php:68
 msgid "Create"
 msgstr ""
 
-#: App/Controllers/Controller.php:149
+#: App/Controllers/Controller.php:119
 msgid "Are you sure?"
 msgstr ""
 
-#: App/Controllers/Controller.php:150
+#: App/Controllers/Controller.php:120
 msgid "Saving..."
 msgstr ""
 
-#: App/Controllers/Controller.php:151 App/Views/Admin/main.php:24
+#: App/Controllers/Controller.php:121
 msgid "Save"
 msgstr ""
 
-#: App/Controllers/Controller.php:214
-#: App/Controllers/Controller.php:242
+#: App/Controllers/Controller.php:178
+#: App/Controllers/Controller.php:204
+msgid "Basic validation failed"
+msgstr ""
+
+#: App/Controllers/Controller.php:185
+#: App/Controllers/Controller.php:211
 msgid "Webhook key invalid"
 msgstr ""
 
-#: App/Controllers/Controller.php:220
+#: App/Controllers/Controller.php:191
 msgid "Webhook deleted successfully"
 msgstr ""
 
-#: App/Controllers/Controller.php:224
+#: App/Controllers/Controller.php:195
 msgid "Webhook delete failed"
 msgstr ""
 
-#: App/Controllers/Controller.php:248
+#: App/Controllers/Controller.php:217
 msgid "Webhook created successfully"
 msgstr ""
 
-#: App/Controllers/Controller.php:252
+#: App/Controllers/Controller.php:221
 msgid "Webhook create failed"
 msgstr ""
 
-#: App/Views/Admin/main.php:15
-msgid "SETTINGS"
+#: App/Controllers/Controller.php:325
+#: App/Controllers/Controller.php:357
+msgid "Webhook received successfully"
 msgstr ""
 
-#: App/Views/Admin/main.php:21
-msgid "Back to WPLoyalty"
+#: App/Controllers/Controller.php:328
+#: App/Controllers/Controller.php:360
+msgid "Hash validation failed"
 msgstr ""
 
-#: App/Views/Admin/main.php:33
-msgid "Is domain allowed (https):"
+#: App/Helpers/Base.php:139
+msgid "reward"
 msgstr ""
 
-#: App/Views/Admin/main.php:39
-msgid "No"
+#: App/Helpers/Base.php:140
+msgid "rewards"
 msgstr ""
 
-#: App/Views/Admin/main.php:41
-msgid "Yes"
+#: App/Helpers/Base.php:241
+msgid "-"
 msgstr ""
 
-#: App/Views/Admin/main.php:53
+#: App/Helpers/Base.php:249
+msgid "Level Update"
+msgstr ""
+
+#: App/Helpers/Base.php:250
+msgid "Daily Login"
+msgstr ""
+
+#: App/Helpers/Base.php:251
+msgid "Custom Action"
+msgstr ""
+
+#: App/Helpers/Base.php:283
+msgid "Starting point of customer"
+msgstr ""
+
+#: App/Helpers/Base.php:384
+msgid "Admin updated"
+msgstr ""
+
+#: App/Helpers/Base.php:385
+msgid "Convert %s to coupon"
+msgstr ""
+
+#: App/Helpers/Base.php:386
+msgid "New Customer"
+msgstr ""
+
+#: App/Helpers/Base.php:387
+msgid "Import Customer"
+msgstr ""
+
+#: App/Helpers/Base.php:388
+msgid "Revoke coupon"
+msgstr ""
+
+#: App/Helpers/Base.php:389
+msgid "Expiry date has been changed manually"
+msgstr ""
+
+#: App/Helpers/Base.php:390
+msgid "Expiry email date has been changed manually"
+msgstr ""
+
+#: App/Helpers/Base.php:391
+msgid "%s Expired"
+msgstr ""
+
+#: App/Helpers/Base.php:392
+msgid "New Level"
+msgstr ""
+
+#: App/Helpers/Base.php:393
+msgid "REST API"
+msgstr ""
+
+#: App/Helpers/Base.php:394
+msgid "Birthday change"
+msgstr ""
+
+#: App/Helpers/EarnCampaign.php:93
+msgid "%s earned via %s"
+msgstr ""
+
+#: App/Helpers/EarnCampaign.php:96
+#: App/Helpers/EarnCampaign.php:195
+#: App/Helpers/EarnCampaign.php:517
+msgid "%s %s earned via %s (%s)"
+msgstr ""
+
+#: App/Helpers/EarnCampaign.php:192
+#: App/Helpers/EarnCampaign.php:513
+msgid "%s %s earned via %s"
+msgstr ""
+
+#: App/Helpers/Rewards.php:33
+msgid "Coupon will apply, when cart have items"
+msgstr ""
+
+#: App/Helpers/Rewards.php:103
+msgid "%s coupon created for %s from %s reward"
+msgstr ""
+
+#: App/Helpers/Rewards.php:259
+msgid "Missing parameter %s"
+msgstr ""
+
+#: App/Helpers/Rewards.php:264
+msgid "The coupon code already exists"
+msgstr ""
+
+#: App/Helpers/Rewards.php:289
+msgid "Invalid coupon type - the coupon type must be any of these: %s"
+msgstr ""
+
+#: App/Helpers/Woocommerce.php:128
+msgid "Points For Purchase"
+msgstr ""
+
+#: App/Helpers/Woocommerce.php:128
+msgid "%s For Purchase"
+msgstr ""
+
+#: App/Views/Admin/main.php:16
 msgid "WebHooks"
 msgstr ""
 
-#: App/Views/Admin/main.php:56
-msgid "WebHook id:"
+#: App/Views/Admin/main.php:22
+msgid "Back to WPLoyalty"
 msgstr ""
 
-#: App/Views/Admin/main.php:57
-msgid "WebHook Key"
+#: App/Views/Admin/main.php:30
+msgid "NOTE: You should have set up the official Judge.me for WooCommerce plugin properly before attempting to create the webhooks. This add-on depends on the configuration from the official Judge.me plugin for WooCommerce."
 msgstr ""
 
-#: App/Views/Admin/main.php:58
-msgid "WebHook url"
+#: App/Views/Admin/main.php:31
+msgid "Please click on the \"Create\" button to create a Webhook in your Judge.me account so that when a review is posted, WPLoyalty can listen and reward the customer with points / rewards as per your configuration."
 msgstr ""
 
-#: App/Views/Admin/main.php:59
+#: App/Views/Admin/main.php:39
+msgid "Webhook ID"
+msgstr ""
+
+#: App/Views/Admin/main.php:40
+msgid "Webhook Key"
+msgstr ""
+
+#: App/Views/Admin/main.php:41
+msgid "WebHook URL"
+msgstr ""
+
+#: App/Views/Admin/main.php:42
 msgid "WebHook Actions"
 msgstr ""

@@ -26,16 +26,15 @@ wljm_jquery(document).on('click', '#wljm-main-page #wljm-webhook-delete', functi
         error: function (request, error) {
         },
         success: function (json) {
-            alertify.set('notifier', 'position', 'top-right');
             button.attr('disabled', false);
             button.html(wljm_localize_data.delete_button_label);
             if (json.success == true) {
-                alertify.success(json.message);
+                createToast(json.message,'wlr-success');
                 setTimeout(function () {
                     location.reload();
                 }, 800);
             } else if (json.success == false) {
-                alertify.error(json.message);
+                createToast(json.message,'wlr-error');
             }
         }
     });
@@ -57,16 +56,15 @@ wljm_jquery(document).on('click', '#wljm-main-page #wljm-webhook-create', functi
         error: function (request, error) {
         },
         success: function (json) {
-            alertify.set('notifier', 'position', 'top-right');
             button.attr('disabled', false);
             button.html(wljm_localize_data.create_button_label);
             if (json.success == true) {
-                alertify.success(json.message);
+                createToast(json.message,'wlr-success'  );
                 setTimeout(function () {
                     location.reload();
                 }, 800);
             } else if (json.success == false) {
-                alertify.error(json.message);
+                createToast(json.message,'wlr-error' );
             }
         }
     });
